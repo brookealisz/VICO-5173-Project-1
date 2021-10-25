@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+}
+
+body,
+nav,
+mark{
+font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    color: darkviolet;
+}
+
+h2.white {
+    font-family: 'Fredoka One', cursive;
+    color: whitesmoke;
+}
+
+p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+p2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+p3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    
+}
+
+p4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color:darkviolet;
+    
+}
+
+p5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+
+p6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color:ghostwhite;
+    
+}
+
+p7 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    bottom: 10px;
+    
+    
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+p8 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+p9 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: whitesmoke;
+    
+}
+
+p10 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+p11 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+hr.aboutrule {
+    width: 20%;
+    border-top: 12px;
+    color: darkviolet;
+}
+
+hr.white {
+    color: whitesmoke;
+}
+
+hr {
+position: relative;
+bottom: 8px;
+}
+
+hr.normal {
+position: relative;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    
+}
+
+.navbar-wrapper {
+    background: rgba(0,0,0,0.5);
+}
+
+    .parallaxLanding {
+        background-image: url("images/landingimage.jpg");
+        min-height: 800px;
+        position: relative;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .parallaxLand {
+        background-image: url("images/stickyresimage.png");
+        min-height: 500px;
+        position: relative;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    th {
+    white-space: nowrap;
+    position: relative;
+}
+
+    .left-icon-pos {
+    position: absolute;
+    left: 10px;
+}
+
+
+
+
+
+.icon-style {
+position: relative;
+top: 5px;
+}
+
+.icon2-style {
+position: relative;
+top: 5px;
+left: 200px;
+}
+
+.icon3-style {
+position: relative;
+top: 13px;
+left: 215px;
+}
+
+.fa-facebook {
+    position: relative;
+    top: 5px;
+    color: black;
+    
+}
+
+.fa-instagram {
+    position: relative;
+    top: 5px;
+    color: black;
+    
+}
+
+
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+</style>
+
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Purple Chopstix</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Megrim&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body id="page-top">
+
+   
+
+    <!-- Navigation-->
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#">
+                <img src="images/chopstixlogo.svg" width="150" height="30" alt="purplechopstix">
+              </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            
+                <ul class="navbar-nav ms-auto">
+                   
+                    <li><a href="https://www.facebook.com/purplechopstix/"> <i class="fa fa-facebook fa-2x px-3"></i></a></li>
+                    <li><a href="http://purplechopstix.com/index.html"><i class="fa fa-instagram fa-2x px-3"></i></a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="#About">About us</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="#MenuOptions">Menu options</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="#Reservation">Make a reservation</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="#Catering">Catering</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="#Gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </body>
+
+  <!-- Images for Landing--> 
+  <div class="row">
+  <div class="col-sm-5" style="padding:0%; margin: 0%;">
+    <img src="images/landingpurple3.jpg" class="img-fluid">
+   </div>
+   <div class="col-sm-7" style="padding:0%; margin: 0%;">
+    <img src="images/landingchopstix3.jpg" class="img-fluid">
+   </div>
+</div>
+
+    
+    <!-- About section-->
+    <section id="About" style="padding: 0%;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6" style="padding:0%; margin: 0%;">
+                    <img src="images/shopimagenew3.png" class="img-fluid">
+                   </div>
+                <div class="col-sm-6" style="padding-right: 80px; padding-left: 80px; padding-top: 80px;">
+                    <h2><span class="bi bi-arrow-right fa-2x icon-style"></span>ABOUT US</h2>
+                    <br>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                        <hr class="aboutrule">
+                        <p1>Hours</p1>
+                        <br>
+                        <p3>WED-THU  <p4>5-8 PM</p4>
+                            <br>
+                            FRI-SAT <p4>5-8:30 PM</p4>
+                            <br>
+                            SUN <p4>11 AM - 1 PM</p4>
+                            <br>
+                            MON-TUES <p4>CLOSED</p4></p3>
+                    </div>
+                        <div class="col-sm-6">
+                        <hr class="aboutrule">
+                        <p1>Location</p1>
+                        <br>
+                        <p3>371 Richland Avenue
+                            <br>
+                            Athens, OH 45701
+                        </p3>
+                    </div>
+                    </div>
+
+                      <br>
+                      <br>
+
+                    <p2>We are currently reservation only — please check our Facebook page for weekly specials or give us a call!
+                    <br>
+                    Please call to place take-out orders.
+                    </p2>
+                    <br>
+                    <br>
+                    <p>Ed Fisher opened Purple Chopstix in 1989. For over twenty-five years, he’s been providing Athens with a unique and eclectic variety of delicious food. These days, his son Gabe joins him in the kitchen, helping prepare all the Chopstix favorites and crafting new specials weekly!</p>
+                    <br>
+                    <p><p5>Parking</p5>
+                        <br>
+                        Purple Chopstix has a small lot in front of the restaurant. Additional parking is available across the street in the Hocking Valley Bank parking lot, when the bank is closed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu section-->
+    <section id="MenuOptions" style="padding-top:0%; padding-bottom: 50px;" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6" style="padding-right: 80px; padding-left: 80px; padding-top: 80px;">
+
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                        <h2><span class="bi bi-arrow-right fa-2x icon-style"></span>OUR MENU</h2>
+                        
+                        
+                        <br>
+                        <br>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <p2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  APPETIZERS
+                                </button>
+                              </p2>
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  
+                                    <p>Greek Pizza</p>
+                                    <p7>$10</p7>
+                                     
+                                  <hr>
+                                  <p>Nori Sushi Roll</p>
+                                  <p7>$9</p7>
+                                  <hr>
+                                  <p>Crostini Bread</p>
+                                  <p7>$8</p7>
+                                  <hr>
+                                  <p>Nachos Grande</p>
+                                  <p7>$11</p7>
+                                  <hr>
+                                  <p>Warm Artichoke Parmesean Dip</p>
+                                  <p7>$10</p7>
+                                  <hr>
+                                  <p>Sesame-Ginger Chicken or Tofu Salad</p>
+                                  <p7>$14</p7>
+                                  <hr>
+                                  <p>House Salad</p>
+                                  <p7>$6</p7>
+                                  <hr>
+                                  <p>Tom Yum Soup</p>
+                                  <p7>$6</p7>
+                                  <hr>
+                                  <p>Chips and Salsa</p>
+                                  <p7>$5</p7>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <p2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  ENTREES
+                                </button>
+                              </p2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Yellow Chicken Curry</p>
+                                    <p7>$17</p7>   
+                                  <hr>
+                                  <p>Red Thai Coconut Curry</p>
+                                  <p7>$19</p7>
+                                  <hr>
+                                  <p>Green Thai Coconut Curry</p>
+                                  <p7>$17</p7>
+                                  <hr>
+                                  <p>Seafood Crepes</p>
+                                  <p7>$21</p7>
+                                  <hr>
+                                  <p>Veggie Tofu</p>
+                                  <p7>$18</p7>
+                                  <hr>
+                                  <p>Daisry Stir Fry</p>
+                                  <p7>$17</p7>
+                                  <hr>
+                                  <p>Bolivian Al Gusto</p>
+                                  <p7>$19</p7>
+                                  <hr>
+                                  <p>Pollo de Taos</p>
+                                  <p7>$18</p7>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <p2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  PASTAS
+                                </button>
+                              </p2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Linguine Shrimp and Scallops</p>
+                                    <p7>$20</p7>   
+                                  <hr>
+                                  <p>Sweet Potato Peanut Salsa</p>
+                                  <p7>$16</p7>
+                                  <hr>
+                                  <p>Seafood Alfredo</p>
+                                  <p7>$20</p7>
+                                  <hr>
+                                  <p>Veggie Pesto Pasta</p>
+                                  <p7>$16</p7>
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <p2 class="accordion-header" id="headingFour">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    DESSERTS
+                                  </button>
+                                </p2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p>Ice Cream A La Carte</p>
+                                    <p7>$7</p7>
+                                      
+                                  <hr>
+                                  <p>Lava Cake</p>
+                                  <p7>$8</p7>
+                                  
+                                  <hr>
+                                  <p>Creme Brulee</p>
+                                  <p7>$10</p7>
+                                  
+                                  <hr>
+                                  <p>Fudge Trio</p>
+                                  <p7>$11</p7>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <p2 class="accordion-header" id="headingFive">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    BEVERAGES
+                                  </button>
+                                </p2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    
+                                    <p>Raspberry Juice</p>
+                                    <p7>$2</p7>
+                                      
+                                  <hr>
+                                  <p>Mandarin Peach Juice</p>
+                                  <p7>$2</p7>
+                                  
+                                  <hr>
+                                  <p>Iced Tea</p>
+                                  <p7>$2</p7>
+                                  
+                                  <hr>
+                                  <p>Lemonade</p>
+                                  <p7>$2</p7>
+
+                                  <hr>
+                                  <p>Hot Tea</p>
+                                  <p7>$2</p7>
+
+                                  <hr>
+                                  <p>Coffee</p>
+                                  <p7>$2</p7>
+
+                                  <hr>
+                                  <p>Decaf</p>
+                                  <p7>$2</p7>
+                                  
+                                  </div>
+                                </div>
+                              </div>
+
+
+                          </div>
+                          <br>
+                          <br>
+                          <p3>Come join us on Sunday mornings for a brunch buffet, Purple Chopstix style!
+                            Brunch is open from 11 a.m. - 1 p.m. every Sunday.
+                            <br>
+                            <p11>Different offerings every week.</p11></p3>
+
+                            
+                    
+                </div>
+                <div class="col-sm-6" style="padding:0%; margin: 0%;">
+                    <img src="images/menuimage0.jpg" class="img-fluid">
+                </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    
+    <!-- Reservation and Catering section-->
+    <section class="parallaxLand" id="Reservation">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-sm-6" style="padding-right: 80px; padding-left: 80px;">
+                    <h2><span class="bi bi-arrow-right fa-2x icon-style"></span>MAKE A RESERVATION</h2>
+
+                    
+                    <a href="https://www.opentable.com/g/columbus/athens-restaurants" class="btn btn-outline-light">BOOK A TABLE</a>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr class="white">
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                    <h2><span class="bi bi-arrow-right fa-2x icon-style"></span>CATERING</h2>
+                    <br>
+
+                    <p8>Purple Chopstix also offers catering and private parties. Choose from a wide variety of appetizers and entrees.</p8>
+                    <br>
+                    <br>
+
+                    <p9>Call for details (740) 592-4798</p9>
+                    
+                </div>
+
+                
+
+                    <div class="col-sm-6" style="padding-right: 80px; padding-left: 80px; padding-top: 80px;">
+                        <div class="col-sm-6">
+
+                            
+                            
+                            <p6>Hours</p6>
+                            <br>
+                            <p10>WED-THU  <p4>5-8 PM</p4>
+                                <br>
+                                FRI-SAT <p4>5-8:30 PM</p4>
+                                <br>
+                                SUN <p4>11 AM - 1 PM</p4>
+                                <br>
+                                MON-TUES <p4>CLOSED</p4></p10>
+                        </div>
+                        <br>
+                        <br>
+                            <div class="col-sm-6">
+                            
+                            <p6>Location</p6>
+                            <br>
+                            <p10>371 Richland Avenue
+                                <br>
+                                Athens, OH 45701
+                            </p10>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+<!-- Gallery section-->
+<section id="Gallery" style="padding-top: 0%; padding-bottom: 150px;" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="padding-right: 80px; padding-left: 80px; padding-top: 80px;">
+                
+                
+
+                    <h2><span class="bi bi-arrow-right fa-2x icon-style"></span>GALLERY</h2>
+                
+                
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-4" style="padding-right: 30px; padding-left: 30px; padding-top: 80px;">
+            <img src="images/galleryimage1-01.png" class="img-fluid">
+            </div>
+
+            <div class="col-sm-4" style="padding-right: 30px; padding-left: 30px; padding-top: 80px;">
+                <img src="images/galleryimage2-01.png" class="img-fluid">
+            </div>
+
+            <div class="col-sm-4" style="padding-right: 30px; padding-left: 30px; padding-top: 80px;">
+                <img src="images/galleryimage3-01.png" class="img-fluid">
+                <br>
+                <br>
+                <br>
+                <a href="http://purplechopstix.com/photos.html" class="btn btn-outline-dark icon2-style">SEE MORE</a>
+                <span class="bi bi-arrow-right fa-3x icon3-style"></span>
+            </div>
+
+                 
+            
+        </div>
+
+        
+        
+    </div>
+</section>
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white">© 2021 Purple Chopstix | 371 Richland Avenue | Athens, OH 45701 | (740) 592-4798</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
